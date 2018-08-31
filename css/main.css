@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+section {
+  background: blueviolet;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  section .container {
+    width: 300px;
+    height: 250px;
+    background-size: inherit;
+    background-image: url("../avengers_300x250_bg.jpg");
+    color: white;
+    position: relative;
+    overflow: hidden; }
+  section .top {
+    position: relative;
+    z-index: 2;
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  section .social {
+    padding-left: 12px; }
+    section .social .social-icon {
+      margin: 0 5px; }
+  section p {
+    font-family: Eras Demi ITC, sans-serif;
+    font-weight: 600;
+    margin: 0 5px;
+    padding-right: 12px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#333333));
+    background-image: -webkit-linear-gradient(top, #ffffff, #333333);
+    background-image: -o-linear-gradient(top, #ffffff, #333333);
+    background-image: linear-gradient(to bottom, #ffffff, #333333);
+    -webkit-background-clip: text;
+    color: transparent; }
+  section .mid-iron {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  section .circle {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px white; }
+  section .bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -12px;
+    left: -2.6rem; }
+
+.social {
+  -webkit-animation: slidedown .5s forwards ease-in-out;
+  animation: slidedown .5s forwards ease-in-out;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s; }
+
+@-webkit-keyframes slidedown {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes slidedown {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+.assemble {
+  -webkit-animation: slideleft .5s forwards ease-in-out;
+  animation: slideleft .5s forwards ease-in-out;
+  -webkit-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s; }
+
+@-webkit-keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+.mid-iron {
+  -webkit-animation: animatescale 1s forwards ease-in-out;
+  animation: animatescale 1s forwards ease-in-out; }
+
+@-webkit-keyframes animatescale {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes animatescale {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.bot-avengtitle {
+  -webkit-animation: slideright .5s forwards ease-in-out;
+  animation: slideright .5s forwards ease-in-out;
+  -webkit-transform: translateX(-250px);
+  -ms-transform: translateX(-250px);
+  transform: translateX(-250px);
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s; }
+
+@-webkit-keyframes slideright {
+  0% {
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes slideright {
+  0% {
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+.bot-big-a {
+  -webkit-animation: animateopacity .5s forwards ease-in-out;
+  animation: animateopacity .5s forwards ease-in-out;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  opacity: 0; }
+
+@-webkit-keyframes animateopacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animateopacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.circle {
+  padding: 12.5rem;
+  -webkit-animation: fadedpadding 1s forwards ease-in-out;
+  animation: fadedpadding 1s forwards ease-in-out;
+  opacity: 0; }
+
+@-webkit-keyframes fadedpadding {
+  0% {
+    padding: 12.5rem;
+    opacity: 1; }
+  100% {
+    padding: 2.5rem;
+    opacity: 0; } }
+
+@keyframes fadedpadding {
+  0% {
+    padding: 12.5rem;
+    opacity: 1; }
+  100% {
+    padding: 2.5rem;
+    opacity: 0; } }

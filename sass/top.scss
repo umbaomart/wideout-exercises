@@ -1,0 +1,84 @@
+// top
+.social {
+    animation: slidedown .5s forwards ease-in-out;
+    transform: translateY(-50px);
+    animation-delay: .6s;
+}
+@keyframes slidedown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.assemble {
+    animation: slideleft .5s forwards ease-in-out;
+    transform: translateX(200px);
+    animation-delay: .6s;
+}
+@keyframes slideleft {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+// mid
+.mid-iron {
+    animation: animatescale 1s forwards ease-in-out;
+}
+@keyframes animatescale {
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// bot
+.bot-avengtitle {
+    animation: slideright .5s forwards ease-in-out;
+    transform: translateX(-250px);
+    animation-delay: .6s;
+}
+@keyframes slideright {
+    0% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.bot-big-a {
+    animation: animateopacity .5s forwards ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes animateopacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.circle {
+    padding: 12.5rem;
+    animation: fadedpadding 1s forwards ease-in-out;
+    opacity: 0;
+}
+@keyframes fadedpadding {
+    0% {
+        padding: 12.5rem;
+        opacity: 1;
+    }
+    100% {
+        padding: 2.5rem;
+        opacity: 0;
+    }
+}
