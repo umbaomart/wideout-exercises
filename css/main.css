@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background: blueviolet; }
+
 .section {
   position: absolute;
-  background: blueviolet;
   width: 300px;
   top: 50%;
   left: 50%;
@@ -18,7 +20,8 @@
     background-image: url("../avengers_300x250_bg.jpg");
     color: white;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
   .section .top {
     position: relative;
     z-index: 2;
