@@ -228,6 +228,29 @@ body {
     opacity: 0; } }
 
 .btn-reset {
+  -webkit-animation: opacityFade 1s forwards ease-in-out;
+  animation: opacityFade 1s forwards ease-in-out;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+@-webkit-keyframes opacityFade {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+@keyframes opacityFade {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+.btn-reset {
   position: absolute;
   z-index: 5;
   background: black;
